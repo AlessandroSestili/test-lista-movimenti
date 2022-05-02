@@ -105,6 +105,37 @@
           }
         }
       }
+    },
+    "lista-movimenti-component": {
+      "projectType": "library",
+      "root": "projects/lista-movimenti-component",
+      "sourceRoot": "projects/lista-movimenti-component/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/lista-movimenti-component/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/lista-movimenti-component/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/lista-movimenti-component/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/lista-movimenti-component/src/test.ts",
+            "tsConfig": "projects/lista-movimenti-component/tsconfig.spec.json",
+            "karmaConfig": "projects/lista-movimenti-component/karma.conf.js"
+          }
+        }
+      }
     }
   },
   "defaultProject": "test-lista-movimenti"
