@@ -1,6 +1,7 @@
 <!-- <p>html lista-movimenti-component funziona!</p> -->
 
 <mat-card class="card details mat-elevation-z8">
+
   <mat-card-header>
 
     <mat-card-title class="details-title">
@@ -22,6 +23,28 @@
   </mat-card-title>
 
   </mat-card-header>
+
+  <mat-card-content>
+    <table 
+        mat-table 
+        [dataSource]="movimentiDatasource"
+    >
+        <ng-container 
+            *ngFor="let column of movimentiPolizzaController" 
+            matColumnDef="{{column.value}}"
+        >
+        <div>
+            <th mat-header-cell *matHeaderCellDef> {{ column.label }} </th>
+            <td mat-cell *matCellDef="let u"></td>
+        </div>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let myRowData; columns: displayedColumns">
+        </tr>
+
+    </table>
+  </mat-card-content>
 
 </mat-card>
 

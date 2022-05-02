@@ -1,0 +1,47 @@
+[
+    {
+       "compagnia":"25",
+       "numeroPolizza":"000005195651",
+       "dataOperazione":"2022-01-31",
+       "duprec":"  ",
+       "importoRata":105.35,
+       "dataIncasso":"2022-01-31",
+       "tipoOperazione":"32",
+       "descOperazione":"BONUS REBATES",
+       "segno":"P",
+       "flagWeb":null,
+       "letteraAssociata":null,
+       "iniziativa":null,
+       "tipo":"Vero"
+    },
+    {
+       "compagnia":"25",
+       "numeroPolizza":"000005195651",
+       "dataOperazione":"2022-01-28",
+       "duprec":"  ",
+       "importoRata":-306.88,
+       "dataIncasso":"2022-01-28",
+       "tipoOperazione":"32",
+       "descOperazione":"SPESE ANNUALI",
+       "segno":"N",
+       "flagWeb":null,
+       "letteraAssociata":null,
+       "iniziativa":null,
+       "tipo":"Vero"
+    },
+    {
+       "compagnia":"25",
+       "numeroPolizza":"000005195651",
+       "dataOperazione":"2021-12-31",
+       "duprec":"  ",
+       "importoRata":105.7,
+       "dataIncasso":"2021-12-31",
+       "tipoOperazione":"32",
+       "descOperazione":"BONUS REBATES",
+       "segno":"P",
+       "flagWeb":null,
+       "letteraAssociata":null,
+       "iniziativa":null,
+       "tipo":"Vero"
+    }
+ ]
