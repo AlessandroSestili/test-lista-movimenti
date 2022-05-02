@@ -2,13 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'lib-lista-movimenti-component',
-  template: `
-    <p>
-      lista-movimenti-component works!
-    </p>
-  `,
-  styles: [
-  ]
+  templateUrl: './lista-movimenti-component.component.html',
+  styleUrls: ['./lista-movimenti-component.component.scss'],
 })
 export class ListaMovimentiComponentComponent implements OnInit {
 
