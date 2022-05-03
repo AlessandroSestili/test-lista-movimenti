@@ -8,8 +8,8 @@ export interface Movimenti {
     tipoOperazione: string | number
     descOperazione: string | number
     segno: string | number
-    flagWeb: null | any
-    letteraAssociata: null | any
-    iniziativa: null | any
+    flagWeb: null | any //TODO: Definire tipo
+    letteraAssociata: null | any //TODO: Definire tipo
+    iniziativa: null | any //TODO: Definire tipo
     tipo: string | number
 }
