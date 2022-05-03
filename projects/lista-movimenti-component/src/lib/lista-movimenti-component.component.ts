@@ -19,6 +19,21 @@ export class ListaMovimentiComponentComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
+    let formattedMovimenti: any = [];
+    console.log(this.movimentiPolizza);
+
+    this.movimentiPolizza.forEach((el:any) => {
+      console.log(el);
+      
+      formattedMovimenti.push({
+        data: el.data,
+        movimento: el.movimento,
+        stato: el.stato,
+        dataIncasso: el.dataIncasso,
+        premioTotale: el.premioTotale
+      })
+    });
   }
 
 }

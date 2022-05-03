@@ -20,7 +20,6 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.http.get('./assets/mocked-data/getPolizzaMovimenti.json').subscribe({
       next: ((_data: any) => {
-        // console.log("data subscribe", _data);
         this.data = _data;
         this.movimentiPolizzaController = this.data
       }),
