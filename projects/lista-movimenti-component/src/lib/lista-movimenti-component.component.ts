@@ -34,6 +34,8 @@ export class ListaMovimentiComponentComponent implements OnInit {
         premioTotale: el.premioTotale
       })
     });
+
+    this.movimentiDatasource = new MatTableDataSource(formattedMovimenti)
   }
 
 }
